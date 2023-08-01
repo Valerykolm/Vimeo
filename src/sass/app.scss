@@ -1,0 +1,38 @@
+@import "colors";
+
+body {
+  color: black;
+  font-family: 'Nunito Sans', sans-serif;
+  margin: auto;
+}
+
+.upper-nav {
+  &_logo {
+    border-right: 1px solid $bg-light-grey;
+    padding-right: 10px;
+  }
+}
+
+.salons {
+  font-family: 'Proxima Nova', sans-serif;
+  color: $text-color;
+  font-weight: 700;
+}
+
+.main-nav {
+  height: 70px;
+  background-color: $bg-bottom-nav;
+  a {
+    text-decoration: none;
+  }
+  &_menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    li {
+      margin-right: 30px;
+    }
+  }
+}
+
+
