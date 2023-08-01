@@ -16,7 +16,6 @@ body {
 }
 
 .main-nav {
-  height: 70px;
   background-color: #6EB744;
 }
 .main-nav a {
@@ -29,4 +28,8 @@ body {
 }
 .main-nav_menu li {
   margin-right: 30px;
+}
+
+header .header-text {
+  width: 690px;
 }

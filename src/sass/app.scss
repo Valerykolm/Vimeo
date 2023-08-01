@@ -20,7 +20,6 @@ body {
 }
 
 .main-nav {
-  height: 70px;
   background-color: $bg-bottom-nav;
   a {
     text-decoration: none;
@@ -32,6 +31,12 @@ body {
     li {
       margin-right: 30px;
     }
+  }
+}
+
+header {
+  .header-text {
+    width: 690px;
   }
 }
 
