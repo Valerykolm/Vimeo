@@ -1,6 +1,6 @@
 body {
   color: black;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "proximanova_regular", sans-serif;
   margin: auto;
 }
 
@@ -8,11 +8,18 @@ body {
   border-right: 1px solid #F4F4F4;
   padding-right: 10px;
 }
-
-.salons {
-  font-family: "Proxima Nova", sans-serif;
+.upper-nav .salons {
+  font-family: "proximanova_bold", sans-serif;
   color: #37454A;
-  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: auto;
+}
+.upper-nav .icon-location-outline {
+  color: #76B926;
+}
+.upper-nav p {
+  color: #76B926;
 }
 
 .main-nav {
@@ -28,8 +35,4 @@ body {
 }
 .main-nav_menu li {
   margin-right: 30px;
-}
-
-header .header-text {
-  width: 690px;
 }

@@ -1,4 +1,15 @@
 @font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/proximanova_bold.otf");
+  font-family: "proximanova_regular";
+  src: url("../fonts/proximanova_regular.eot");
+  src: url("../fonts/proximanova_regular.eot") format("embedded-opentype"), url("../fonts/proximanova_regular.woff2") format("woff2"), url("../fonts/proximanova_regular.woff") format("woff"), url("../fonts/proximanova_regular.ttf") format("truetype"), url("../fonts/proximanova_regular.svg#proximanova_regular") format("svg");
+}
+@font-face {
+  font-family: "proximanova_bold";
+  src: url("../fonts/proximanova_bold.eot");
+  src: url("../fonts/proximanova_bold.eot") format("embedded-opentype"), url("../fonts/proximanova_bold.woff2") format("woff2"), url("../fonts/proximanova_bold.woff") format("woff"), url("../fonts/proximanova_bold.ttf") format("truetype"), url("../fonts/proximanova_bold.svg#proximanova_bold") format("svg");
+}
+@font-face {
+  font-family: "proximanova_light";
+  src: url("../fonts/proximanova_light.eot");
+  src: url("../fonts/proximanova_light.eot") format("embedded-opentype"), url("../fonts/proximanova_light.woff2") format("woff2"), url("../fonts/proximanova_light.woff") format("woff"), url("../fonts/proximanova_light.ttf") format("truetype"), url("../fonts/proximanova_light.svg#proximanova_light") format("svg");
 }
