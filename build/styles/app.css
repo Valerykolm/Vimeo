@@ -4,6 +4,23 @@ body {
   margin: auto;
 }
 
+button {
+  background-color: #ffffff;
+  border-radius: 26px;
+  padding: 12px 30px;
+  border: 1px solid #76B926;
+  display: flex;
+}
+button .letter {
+  color: #76B926;
+  font-family: "proximanova_bold", sans-serif;
+  line-height: 19.49px;
+}
+
+.upper-nav {
+  font-size: 16px;
+  line-height: 22px;
+}
 .upper-nav_logo {
   border-right: 1px solid #F4F4F4;
   padding-right: 10px;
@@ -11,15 +28,18 @@ body {
 .upper-nav .salons {
   font-family: "proximanova_bold", sans-serif;
   color: #37454A;
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: auto;
 }
 .upper-nav .icon-location-outline {
   color: #76B926;
 }
-.upper-nav p {
+.upper-nav .location {
+  font-family: "proximanova_bold", sans-serif;
   color: #76B926;
+  border-right: 1px solid #DFDFDF;
+  padding-right: 10px;
+}
+.upper-nav .city {
+  color: rgba(55, 69, 74, 0.6);
 }
 
 .main-nav {

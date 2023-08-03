@@ -6,7 +6,22 @@ body {
   margin: auto;
 }
 
+button {
+  background-color: #ffffff;
+  border-radius: 26px;
+  padding: 12px 30px;
+  border: 1px solid $text-green;
+  display: flex;
+  .letter {
+    color: $text-green;
+    font-family: 'proximanova_bold', sans-serif;
+    line-height: 19.49px;
+  }
+}
+
 .upper-nav {
+  font-size: 16px;
+  line-height: 22px;
   &_logo {
     border-right: 1px solid $bg-light-grey;
     padding-right: 10px;
@@ -14,15 +29,18 @@ body {
   .salons {
     font-family: 'proximanova_bold', sans-serif;
     color: $text-color;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: auto;
   }
   .icon-location-outline {
     color: $text-green;
   }
-  p {
+  .location {
+    font-family: 'proximanova_bold', sans-serif;
     color: $text-green;
+    border-right: 1px solid #DFDFDF;
+    padding-right: 10px;
+  }
+  .city {
+    color: #37454A99;
   }
 }
 
