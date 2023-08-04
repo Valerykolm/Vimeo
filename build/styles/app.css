@@ -7,7 +7,7 @@ body {
 button {
   background-color: #ffffff;
   border-radius: 26px;
-  padding: 12px 30px;
+  padding: 10px 41px 10px 30px;
   border: 1px solid #76B926;
   display: flex;
 }
@@ -15,6 +15,22 @@ button .letter {
   color: #76B926;
   font-family: "proximanova_bold", sans-serif;
   line-height: 19.49px;
+}
+button .small-letter {
+  font-family: "proximanova_light", sans-serif;
+  color: #76B926;
+  font-size: 14px;
+  line-height: 17.05px;
+}
+button .sign-up {
+  font-size: 14px;
+  line-height: 14px;
+  width: 102px;
+  color: #37454A;
+  padding-left: 10px;
+}
+button p {
+  margin: auto;
 }
 
 .upper-nav {
@@ -39,7 +55,18 @@ button .letter {
   padding-right: 10px;
 }
 .upper-nav .city {
+  font-family: "proximanova_light", sans-serif;
   color: rgba(55, 69, 74, 0.6);
+}
+.upper-nav .phone {
+  font-family: "proximanova_bold", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #37454A;
+}
+.upper-nav #border-rigth {
+  border-right: 1px solid #F4F4F4;
+  padding-right: 5px;
 }
 
 .main-nav {
