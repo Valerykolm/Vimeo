@@ -65,9 +65,33 @@ button {
     line-height: 30px;
     color: $text-color;
   }
-  #border-rigth {
-    border-right: 1px solid $bg-light-grey;
-    padding-right: 5px;
+  .call-back {
+    color: $text-green;
+    font-size: 14px;
+    line-height: 14px;
+    display: inline;
+    border-bottom: 1px dashed $text-green;
+  }
+  .icon-heart {
+    color: #E34C4C;
+    font-size: 24px;
+    padding-right: 20px;
+  }
+  .icon-basket {
+    color: $text-color;
+    font-size: 28px;
+    position: relative;
+  }
+  .amount {
+    background-color: $text-green;
+    font-size: 12px;
+    line-height: 14.62px;
+    color: $white;
+    padding: 6px 10px;
+    border-radius: 25px;
+    position: absolute;
+    top: 23px;
+    right: 87px;
   }
 }
 
