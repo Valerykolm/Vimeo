@@ -107,6 +107,7 @@ button p {
 
 .main-nav {
   background-color: #6EB744;
+  display: flex;
 }
 .main-nav a {
   text-decoration: none;
@@ -118,4 +119,9 @@ button p {
 }
 .main-nav_menu li {
   margin-right: 30px;
+}
+.main-nav .search {
+  background-color: #62A53C;
+  height: 43px;
+  padding: 8px;
 }

@@ -109,6 +109,7 @@ button {
 
 .main-nav {
   background-color: $bg-bottom-nav;
+  display: flex;
   a {
     text-decoration: none;
   }
@@ -119,6 +120,11 @@ button {
     li {
       margin-right: 30px;
     }
+  }
+  .search {
+    background-color: #62A53C;
+    height: 43px;
+    padding: 8px;
   }
 }
 
