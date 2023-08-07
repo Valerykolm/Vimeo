@@ -79,7 +79,6 @@ button p {
 .upper-nav .icon-basket {
   color: #37454A;
   font-size: 28px;
-  position: relative;
 }
 .upper-nav .amount {
   background-color: #76B926;
@@ -88,9 +87,22 @@ button p {
   color: #ffffff;
   padding: 6px 10px;
   border-radius: 25px;
-  position: absolute;
-  top: 23px;
-  right: 87px;
+  margin-left: -10px;
+  top: -20px;
+}
+.upper-nav .amount_heart {
+  background-color: #76B926;
+  font-size: 12px;
+  line-height: 14.62px;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 25px;
+  margin-left: -30px;
+  top: -20px;
+}
+.upper-nav .border-right {
+  border-right: 1px solid #F4F4F4;
+  height: 100px;
 }
 
 .main-nav {
