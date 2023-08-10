@@ -1,5 +1,5 @@
 body {
-  color: black;
+  color: #37454A;
   font-family: "proximanova_regular", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -38,6 +38,7 @@ button p {
 .upper-nav {
   font-size: 16px;
   line-height: 22px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.01);
 }
 .upper-nav_logo {
   border-right: 1px solid #F4F4F4;
@@ -116,6 +117,49 @@ button p {
   top: -20px;
 }
 
+header {
+  background-color: #F4F4F4;
+}
+header .breadcrumbs {
+  padding-top: 20px;
+  color: #37454A;
+}
+header .breadcrumbs .icon-home-outline {
+  color: #76B926;
+  font-size: 14px;
+}
+header .breadcrumbs .icon-right-open-outline {
+  font-size: 10px;
+}
+header .breadcrumbs a {
+  color: rgba(55, 69, 74, 0.6);
+  text-decoration: none;
+}
+header .breadcrumbs a:hover {
+  color: #82d819;
+}
+header h1 {
+  padding-top: 30px;
+  font-family: "proximanova_bold", sans-serif;
+}
+header h1 span {
+  color: #76B72A;
+}
+header p {
+  padding-top: 30px;
+  color: rgba(55, 69, 74, 0.6);
+}
+header .header_text {
+  color: #37454A;
+  font-style: italic;
+  padding-top: 10px;
+}
+header button {
+  margin-top: 30px;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+
 .border-right {
   border-right: 1px solid #F4F4F4;
   height: 100px;
@@ -158,7 +202,7 @@ button p {
 .main-nav .search {
   background-color: #62A53C;
   padding: 15px 20px;
-  width: 150px;
+  width: 250px;
 }
 
 .footer {
@@ -214,8 +258,50 @@ button p {
 
 .footer-nav {
   background-color: #F4F4F4;
+  color: #37454A;
+  padding-bottom: 65px;
 }
-.footer-nav .contact {
+.footer-nav h4 {
+  font-family: "proximanova_bold", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.footer-nav p {
+  color: rgba(55, 69, 74, 0.6);
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0px;
+}
+.footer-nav .border-footer-right {
   border-right: 1px solid #DFDFDF;
-  padding-right: 10px;
+  height: 290px;
+  margin-right: 30px;
+  width: auto;
+}
+.footer-nav .border-footer-top {
+  border-top: 1px solid #DFDFDF;
+  padding-top: 20px;
+  margin-top: 10px;
+  color: rgba(55, 69, 74, 0.6);
+  font-size: 14px;
+}
+.footer-nav .contact a {
+  display: block;
+  color: rgba(55, 69, 74, 0.6);
+  text-decoration-color: #DFDFDF;
+  padding-bottom: 10px;
+}
+
+.footer-rights {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: rgba(55, 69, 74, 0.6);
+  font-size: 14px;
+  line-height: 20px;
+}
+.footer-rights a {
+  color: rgba(55, 69, 74, 0.6);
+}
+.footer-rights p {
+  font-family: "Montserrat", sans-serif;
 }

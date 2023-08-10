@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="styles/fontello.css">
     <link rel="stylesheet" href="styles/fonts.css">
 
+    <!-- Fonts Google Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <!--Owl carousel CSS-->
     <link rel="stylesheet" href="styles/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/owl.theme.default.min.css">
@@ -80,19 +85,19 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="breadcrumbs">
-              <p><i class="icon-home-outline"></i>> Текст текст</p>
+              <a href="#"><i class="icon-home-outline"></i><i class="icon-right-open-outline"></i>Текст текст</a>
             </div>
-            <h1>Заголовок текст текст текст текст текст текст</h1>
+            <h1>Заголовок <span>текст текст</span> текст текст текст текст</h1>
             <p>текст текст, текст текст текст текст текст текст текст текст текст текст текст текст 
               текст текст текст текст текст текст текст текст текст текст текст текст текст текст 
               текст текст текст текст текст текст текст текст.</p>
-            <p>Текст – текст текст текст  текст  текст , текст  текст  текст текст текст текст 
+            <p class="header_text">Текст – текст текст текст  текст  текст , текст  текст  текст текст текст текст 
               текст текст текст текст текст текст текст текст текст текст.</p>
             <button>Записаться на проверку</button>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
             <img src="img/header-img.png" class="img-responsive" alt="header image">
           </div>
         </div>
@@ -100,7 +105,7 @@
     </header>
     <div class="advatages">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row justify-content-between text-center">
           <h2 class="text-center">Заголовок заголовок заголовок</h2>
           <div class="col-md-auto">
             <img src="img/icon-1.png" alt="icon">
@@ -117,7 +122,7 @@
               Текст</p>
           </div>
         </div>
-        <div class="row justify-content-between">
+        <div class="row justify-content-between text-center">
           <div class="col-md-auto">
             <img src="img/icon-4.png" alt="icon">
             <p>Текст Текст текст Текст текст
@@ -140,7 +145,7 @@
     <div class="text-area">
       <div class="container">
         <div class="row">
-          <div class="col-md-auto">
+          <div class="col-md-7 col-md-offset-1">
             <h3>Текст текст:</h3>
             <ul>
               <li>текст текст</li>
@@ -151,7 +156,7 @@
               <li>текст текст текст текст текст текст текст текст текст текст текст текст текст текст</li>
             </ul>
           </div>
-          <div class="col-md-auto">
+          <div class="col-md-4">
             <img src="img/text-img.png" alt="text image">
           </div>
         </div>
@@ -230,17 +235,18 @@
     </div>
     <div class="footer-nav">
       <div class="container">
-        <div class="row align-items-baseline">
-          <div class="col-md-4 contact">
+        <div class="row">
+          <div class="col-md-3 contact">
             <img src="img/vimeo-footer.png" alt="logo footer">
-            <p><i class="icon-phone"></i>+7 (800) 111-111-1</p>
-            <p><i class="icon-at"></i>info@vimeo.ru</p>
-            <p><i class="icon-question-circle-o"></i>Задать вопрос</p>
-            <p><i class="icon-commenting-o"></i>Оставить отзыв</p>
-            <p>текст текст текст текст текст текст текст текст 
+            <a href="#" class="text-decoration-none"><i class="icon-phone pe-3"></i>+7 (800) 111-111-1</a>
+            <a href="#" class="text-decoration-none"><i class="icon-at pe-3"></i>info@vimeo.ru</a>
+            <a href="#"><i class="icon-question-circle-o pe-3"></i>Задать вопрос</a>
+            <a href="#"><i class="icon-commenting-o pe-3"></i>Оставить отзыв</a>
+            <p class="border-footer-top">текст текст текст текст текст текст текст текст 
               текст текст текст текст текст </p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-1 text-center border-footer-right mt-4"></div>
+          <div class="col-md-2 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название название</p>
@@ -248,7 +254,7 @@
             <p>Название</p>
             <p>Название название</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название название</p>
@@ -259,7 +265,7 @@
             <p>Название название</p>
             <p>Название</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mt-4">
             <h4>Заголовок заголовок</h4>
             <p>Название</p>
             <p>Название</p>
@@ -269,7 +275,7 @@
             <p>Название название</p>
             <p>Название</p>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название</p>
@@ -285,11 +291,11 @@
         </div>
       </div>
     </div>
-    <div class="footer-right">
+    <div class="footer-rights">
       <div class="container">
         <div class="row">
           <div class="col-md-auto">
-            <p>Политика конфиденциальности</p>
+            <a href="#">Политика конфиденциальности</a>
             <p>© Все права защищены авторским правом</p>
           </div>
         </div>
