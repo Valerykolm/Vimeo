@@ -8,6 +8,15 @@ body {
   margin: auto;
 }
 
+h3, h5 {
+  font-family: 'proximanova_bold', sans-serif;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 button {
   background-color: #ffffff;
   border-radius: 26px;
@@ -200,7 +209,28 @@ header {
   }
 }
 
-.advatages {
+.advantages {
+  p {
+    font-family: 'proximanova_bold', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: $text-color;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  &_text {
+    background-color: $bg-light-grey;
+    border-radius: 15px;
+    padding: 65px 60px 35px 60px;
+    height: 190px;
+    span {
+      color: $header-green;
+    }
+  }
+  &_icon {
+    margin-bottom: -50px;
+  }
   .check_green {
     margin-top: 30px;
     background: linear-gradient(270deg, #82CA2C, #6CB644,);
@@ -211,16 +241,23 @@ header {
     display: flex;
     align-items: center;
     border-radius: 35px;
-    padding: 24px 11px 24px 30px;
+    padding: 10px 11px 10px 30px;
     i {
       background-color: $white;
       border-radius: 35px;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding: 10px;
       margin-left: 20px;
       font-size: 16px;
       color: $text-footer;
     }
+  }
+}
+
+.slider {
+  background-color: $bg-light-grey;
+  .description {
+    background-color: $white;
+    height: 151px;
   }
 }
 
