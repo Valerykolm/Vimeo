@@ -24,17 +24,20 @@
     <!--Owl carousel CSS-->
     <link rel="stylesheet" href="styles/owl.carousel.min.css">
     <link rel="stylesheet" href="styles/owl.theme.default.min.css">
+
+    <!--Fancybos-->
+    <link rel="stylesheet" href="styles/jquery.fancybox.min.css">
   </head>
   <body>
     <div class="upper-nav">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-md-auto">
+          <div class="col-md-auto text-center">
             <div class="upper-nav_logo">
               <a href="index.html"><img src="img/vimeo 1.png" alt="logo"></a>
             </div>
           </div> 
-          <div class="col-md-auto">
+          <div class="col-md-auto text-center">
             <div class="salons">ТЕКСТ ТЕКСТ</div>
             <div class="row justify-content-between">
               <div class="col-md-auto location"><i class="icon-location-outline"></i><a href="#">Тексттт (10)</a></div> 
@@ -42,18 +45,18 @@
             </div>
           </div>
           <div class="col-md-auto">
-            <button class="align-items-center">
+            <button class="align-items-center m-auto" data-fancybox data-src="#hidden-content" href="javascript:;">
               <div><p class="letter">Ш Б</p><p class="small-letter">н м к</p></div>
               <div class="sign-up text-start"><b>Запишитесь на проверку</b></div>
             </button>
           </div>
           <div class="col-md-auto border-right"></div>
-          <div class="col-md-auto text-end">
+          <div class="col-md-auto col-6 text-end">
             <div class="col-md-auto phone">+7 (800) 111-111-1</div>
             <div class="col-md-auto call-back"><a href="#">Перезвоните мне</a></div>
           </div>
           <!--card-->
-          <div class="col-md-auto">
+          <div class="col-md-auto col-6">
             <a href="#"><i class="icon-heart"></i><sup class="amount_heart">7</sup></a>
             <a href="#"><i class="icon-basket"></i><sup class="amount">3</sup></a>
           </div>
@@ -95,10 +98,12 @@
               текст текст текст текст текст текст текст текст.</p>
             <p class="header_text">Текст – текст текст текст  текст  текст , текст  текст  текст текст текст текст 
               текст текст текст текст текст текст текст текст текст текст.</p>
-            <button>Записаться на проверку</button>
+            <button data-fancybox data-src="#hidden-content" href="javascript:;">Записаться на проверку</button>
           </div>
           <div class="col-md-5">
-            <img src="img/header-img.png" class="img-responsive" alt="header image">
+            <a href="img/header-img.png" data-fancybox="images">
+              <img src="img/header-img.png" alt="header image">
+            </a>
           </div>
         </div>
       </div>
@@ -158,12 +163,12 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-auto">
-            <button class="check_green">Записаться на проверку <i class="icon-right-open-big"></i></button>
+            <button class="check_green" data-fancybox data-src="#hidden-content" href="javascript:;">Записаться на проверку <i class="icon-right-open-big"></i></button>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-area">
+    <div class="text-area mt-5">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-md-7 col-md-offset-1">
@@ -178,7 +183,9 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <img src="img/text-img.png" alt="text image">
+            <a href="img/text-img.png" data-fancybox="images">
+              <img src="img/text-img.png" alt="text image">
+            </a>
           </div>
         </div>
       </div>
@@ -186,41 +193,46 @@
     <!--owl-carousel-->
     <div class="slider">
       <div class="container">
-        <div class="row">
+        <div class="row mt-5 pt-5">
           <h3>Заголовок</h3>
-          <div class="owl-carousel">
-            <div>
+          <div class="owl-carousel pt-3">
+            <div class="slider_shadow">
               <img src="img/slide-1.png" alt="slide-1">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3">Текст Текст Текст Текст Текст Текст </p>
               </div>
             </div>
-            <div><img src="img/slide-2.png" alt="slide-2">
+            <div class="slider_shadow">
+              <img src="img/slide-2.png" alt="slide-2">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3">Текст Текст Текст Текст Текст Текст </p>
               </div>
             </div>
-            <div><img src="img/slide-3.png" alt="slide-3">
+            <div class="slider_shadow">
+              <img src="img/slide-3.png" alt="slide-3">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3 pe-3"><b>Текст</b> Текст Текст Текст Текст Текст Текст Текст Текст Текст*</p>
               </div>
             </div>
-            <div><img src="img/slide-1.png" alt="slide-1">
+            <div class="slider_shadow">
+              <img src="img/slide-1.png" alt="slide-1">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3">Текст Текст Текст Текст Текст Текст </p>
               </div>
             </div>
-            <div><img src="img/slide-2.png" alt="slide-2">
+            <div class="slider_shadow">
+              <img src="img/slide-2.png" alt="slide-2">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3">Текст Текст Текст Текст Текст Текст </p>
               </div>
             </div>
-            <div><img src="img/slide-3.png" alt="slide-3">
+            <div class="slider_shadow">
+              <img src="img/slide-3.png" alt="slide-3">
               <div class="description">
                 <h5 class="p-3">Вопрос вопрос вопрос?</h5>
                 <p class="ps-3 pe-3"><b>Текст</b> Текст Текст Текст Текст Текст Текст Текст Текст Текст*</p>
@@ -228,43 +240,65 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <p>*текст текст текст текст текст текст текст текст текст текст текст текст текст 
+        <div class="row mt-3">
+          <p class="slider_text">*текст текст текст текст текст текст текст текст текст текст текст текст текст 
             текст текст текст текст текст текст текст текст текст текст текст текст текст текст
             текст текст текст текст.</p>
         </div>
       </div>
     </div>
-    <div class="check-up">
+    <div class="check-up mt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-md-7">
+        <div class="row justify-content-between check-up_bg">
+          <div class="col-md-6 col-md-offset-1 mt-4 ms-3">
             <h3>Вопрос вопрос вопрос вопрос вопрос вопрос
               вопрос?</h3>
-            <ol>
-              <li>текст текст</li>
-              <li>текст текст текст текст</li>
-              <li>текст</li>
-              <li>текст текст текст текст текст текст текст текст текст текст текст текст</li>
-              <li>текст текст текст текст текст текст текст текст текст текст</li>
+            <ol class="mt-4">
+              <li>Текст текст текст текст текст текст текст текст текст текст</li>
+              <li>Текст текст текст текст текст текст текст</li>
+              <li>Текст текст текст текст текст текст текст текст</li>
+              <li>Текст текст текст текст текст текст текст текст текст</li>
+              <li>Текст текст текст текст текст текст</li>
             </ol>
-            <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст 
-              Текст Текст Текст Текст Текст Текст Текст 
-              Текст Текст Текст Текст Текст Текст Текст Текст 
-              Текст Текст Текст Текст Текст Текст Текст Текст Текст 
-              Текст Текст Текст Текст Текст Текст 
-              
+            <p class="check-up_text">
               Текст текст текст текст текст текст текст текст текст текст текст текст текст 
               текст текст текст текст текст текст текст текст текст текст текст текст текст 
               текст текст текст текст текст текст текст текст текст текст текст текст текст 
               текст текст текст текст текст текст текст текст текст .</p>  
           </div>
-          <div class="col-md-5"><img src="img/check-up.png" class="img-responsive center-block" alt="check-up"></div>
+          <div class="col-md-5">
+            <a href="img/check-up.png" data-fancybox="images">
+              <img src="img/check-up.png" class="img-responsive center-block" alt="check-up">
+            </a>
+          </div>
         </div>
-        <button>Записаться на проверку </button>
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <button class="check_green" data-fancybox data-src="#hidden-content" href="javascript:;">
+              Записаться на проверку <i class="icon-right-open-big"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer">
+    <!--Form check-up-->
+    <div style="display: none;" id="hidden-content">
+      <h3 class="text-center">Записаться на проверку</h3>
+      <form action="#">
+        <div class="text-center mt-4">
+          <input type="text" placeholder="Введите свой e-mail">
+          <input type="text" placeholder="Введите свой phone">
+        </div>
+        <div class="mt-3 form_checkbox">
+          <input type="checkbox" class="custom-checkbox" id="chk1-label" name="chk1-label" value="yes" />
+          <label for="chk1-label">Я хочу получать информацию о новостях и акциях компании</label>
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+          <button type="submit" class="sign">Записаться</button>
+        </div>
+      </form>
+    </div>
+    <div class="footer mt-5">
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-3">
@@ -359,12 +393,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--Owl carousel-->
     <script src="js/owl.carousel.min.js"></script>
+    <!--Fancybox-->
+    <script src="js/jquery.fancybox.min.js"></script>
     <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
           loop: true,
-          margin: 10,
-          nav: true,
+          margin: 30,
+          touchDrag: true,
+          pullDrag: true,
+          lazyLoad: true,
+          //autoplay: true,
+          //autoplayTimeout: 5000,
           responsive:{
             0: {
               items:1
@@ -380,6 +420,6 @@
       });
     </script>
     <!-- Bootstrap JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
