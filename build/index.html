@@ -44,19 +44,19 @@
               <div class="col-md-auto city">текст (10)</div>
             </div>
           </div>
-          <div class="col-md-auto">
+          <div class="col-md-auto mobile">
             <button class="align-items-center m-auto" data-fancybox data-src="#hidden-content" href="javascript:;">
               <div><p class="letter">Ш Б</p><p class="small-letter">н м к</p></div>
               <div class="sign-up text-start"><b>Запишитесь на проверку</b></div>
             </button>
           </div>
           <div class="col-md-auto border-right"></div>
-          <div class="col-md-auto col-6 text-end">
-            <div class="col-md-auto phone">+7 (800) 111-111-1</div>
+          <div class="col-md-auto col-6 text-end mobile">
+            <div class="col-md-auto phone"><a href="tel:+78001111111">+7 (800) 111-111-1</a></div>
             <div class="col-md-auto call-back"><a href="#">Перезвоните мне</a></div>
           </div>
           <!--card-->
-          <div class="col-md-auto col-6">
+          <div class="col-md-auto col-6 mobile">
             <a href="#"><i class="icon-heart"></i><sup class="amount_heart">7</sup></a>
             <a href="#"><i class="icon-basket"></i><sup class="amount">3</sup></a>
           </div>
@@ -70,6 +70,9 @@
       <div class="container">
         <div class="row justify-content-evenly align-items-center">
           <div class="col-md-auto">
+            <button class="main-nav_btn">
+              <i class="icon-menu"></i>
+            </button>
             <ul class="main-nav_menu">
               <li><a href="#">Tекст текст</a></li>
               <li><a href="#">Tекст текст текст</a></li>
@@ -100,7 +103,7 @@
               текст текст текст текст текст текст текст текст текст текст.</p>
             <button data-fancybox data-src="#hidden-content" href="javascript:;">Записаться на проверку</button>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 mobile">
             <a href="img/header-img.png" data-fancybox="images">
               <img src="img/header-img.png" alt="header image">
             </a>
@@ -308,7 +311,9 @@
           <div class="col-md-auto">
             <form action="#" class="forma-sign">
               <input type="text" placeholder="Введите свой e-mail">
-              <button type="submit" class="sign">Подписаться</button>
+              <a data-fancybox data-type="ajax" data-src="my_page.com/path/to/ajax/" href="javascript:;">
+                <button type="submit" class="sign">Подписаться</button>
+              </a>
             </form>
           </div>
           <div class="col-md-auto border-right"></div>
@@ -334,7 +339,7 @@
               текст текст текст текст текст </p>
           </div>
           <div class="col-md-1 text-center border-footer-right mt-4"></div>
-          <div class="col-md-2 mt-4">
+          <div class="col-md-2 col-6 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название название</p>
@@ -342,7 +347,7 @@
             <p>Название</p>
             <p>Название название</p>
           </div>
-          <div class="col-md-2 mt-4">
+          <div class="col-md-2 col-6 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название название</p>
@@ -353,7 +358,7 @@
             <p>Название название</p>
             <p>Название</p>
           </div>
-          <div class="col-md-2 mt-4">
+          <div class="col-md-2 col-6 mt-4">
             <h4>Заголовок заголовок</h4>
             <p>Название</p>
             <p>Название</p>
@@ -363,7 +368,7 @@
             <p>Название название</p>
             <p>Название</p>
           </div>
-          <div class="col-md-2 mt-4">
+          <div class="col-md-2 col-6 mt-4">
             <h4>Заголовок</h4>
             <p>Название</p>
             <p>Название</p>
@@ -418,6 +423,14 @@
           }
         });
       });
+      $(document).ready(function () {
+        var menuBtn = $('.main-nav_btn');
+        var menu = $('.main-nav_menu');
+        menuBtn.on($(menuBtn).click(function (e) { 
+          e.preventDefault();
+          menu.toggleClass('main-nav_menu__active');
+        }));
+      })
     </script>
     <!-- Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>

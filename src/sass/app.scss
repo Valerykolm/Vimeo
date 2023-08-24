@@ -46,6 +46,10 @@ button {
   }
 }
 
+button:hover {
+  background-color: $button-hover;
+}
+
 input {
   border-radius: 26px;
   padding: 10px;
@@ -83,6 +87,8 @@ input {
   }
 }
 
+
+
 .upper-nav {
   font-size: 16px;
   line-height: 22px;
@@ -115,10 +121,12 @@ input {
     color: #37454A99;
   }
   .phone {
-    font-family: 'proximanova_bold', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    color: $text-color;
+    a {
+      font-family: 'proximanova_bold', sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      color: $text-color;
+    }
   }
   .call-back {
     a {
@@ -166,6 +174,8 @@ input {
     }
   }
 }
+
+/*-------------Header------------*/
 
 header {
   background-color: $bg-light-grey;
@@ -218,6 +228,7 @@ header {
 .main-nav {
   background-color: $bg-bottom-nav;
   display: flex;
+  position: relative;
   &_menu {
     list-style: none;
     padding: 0;
@@ -238,6 +249,20 @@ header {
     a:hover {
       color: $text-color;
     }
+  }
+  &_btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    position: absolute;
+    top: 8px;
+    right: 30px;
+      &:hover {
+        cursor: pointer;
+      }
   }
   .search {
     background-color: #62A53C;
@@ -335,6 +360,12 @@ header {
   }
   .forma-sign {
     display: flex;
+    a {
+      text-decoration: none;
+    }
+    button:hover {
+      background-color: $text-green;
+    }
   }
 }
 
@@ -425,3 +456,71 @@ header {
 }
 
 
+@media (max-width: 767px) {
+  .mobile {
+    margin-top: 15px;
+  }
+  .border-right {
+    display: none;
+  }
+  .upper-nav {
+    &_logo {
+      border-right: none;
+    }
+    .location {
+      border-right: none;
+    }
+  }
+
+  .main-nav {
+    &_btn {
+      display: block;
+      &:hover {
+        background-color: transparent;
+      }
+		}
+		&_menu {
+			flex-direction: column;
+			display: none;
+			&__active {
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 0;
+        li {
+          border-right: none;
+        }
+			}
+		}
+		a {
+			&:hover {
+        display: none;
+			}
+    }
+    .search {
+      display: none;
+    }
+  }
+  
+  .forma-sign {
+    input {
+      padding: 0;
+    }
+    .sign {
+      margin: 0;
+    }
+  }
+
+  .footer_social {
+    img {
+      background-color: transparent;
+    }
+  }
+
+  .border-footer-right {
+    display: none
+  }
+
+  .contact {
+    text-align: center;
+  }
+}

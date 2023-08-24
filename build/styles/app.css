@@ -44,6 +44,10 @@ button p {
   margin: auto;
 }
 
+button:hover {
+  background-color: #e1fbc1;
+}
+
 input {
   border-radius: 26px;
   padding: 10px;
@@ -113,7 +117,7 @@ input {
   font-family: "proximanova_light", sans-serif;
   color: rgba(55, 69, 74, 0.6);
 }
-.upper-nav .phone {
+.upper-nav .phone a {
   font-family: "proximanova_bold", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -163,6 +167,7 @@ input {
   top: -20px;
 }
 
+/*-------------Header------------*/
 header {
   background-color: #F4F4F4;
 }
@@ -214,6 +219,7 @@ header button {
 .main-nav {
   background-color: #6EB744;
   display: flex;
+  position: relative;
 }
 .main-nav_menu {
   list-style: none;
@@ -235,6 +241,20 @@ header button {
 }
 .main-nav_menu a:hover {
   color: #37454A;
+}
+.main-nav_btn {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  position: absolute;
+  top: 8px;
+  right: 30px;
+}
+.main-nav_btn:hover {
+  cursor: pointer;
 }
 .main-nav .search {
   background-color: #62A53C;
@@ -329,6 +349,12 @@ header button {
 .footer .forma-sign {
   display: flex;
 }
+.footer .forma-sign a {
+  text-decoration: none;
+}
+.footer .forma-sign button:hover {
+  background-color: #76B926;
+}
 
 .footer-nav {
   background-color: #F4F4F4;
@@ -412,4 +438,58 @@ header button {
   border-color: #76B926;
   background-color: #76B926;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 767px) {
+  .mobile {
+    margin-top: 15px;
+  }
+  .border-right {
+    display: none;
+  }
+  .upper-nav_logo {
+    border-right: none;
+  }
+  .upper-nav .location {
+    border-right: none;
+  }
+  .main-nav_btn {
+    display: block;
+  }
+  .main-nav_btn:hover {
+    background-color: transparent;
+  }
+  .main-nav_menu {
+    flex-direction: column;
+    display: none;
+  }
+  .main-nav_menu__active {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .main-nav_menu__active li {
+    border-right: none;
+  }
+  .main-nav a:hover {
+    display: none;
+  }
+  .main-nav .search {
+    display: none;
+  }
+  .forma-sign input {
+    padding: 0;
+  }
+  .forma-sign .sign {
+    margin: 0;
+  }
+  .footer_social img {
+    background-color: transparent;
+  }
+  .border-footer-right {
+    display: none;
+  }
+  .contact {
+    text-align: center;
+  }
 }
